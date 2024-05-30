@@ -91,12 +91,12 @@
     "css": [
       "assets/app-0156f648.css"
     ],
-    "file": "assets/app-8f63c503.js",
+    "file": "assets/app-1853eba0.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   },
   "resources/scss/app.scss": {
-    "file": "assets/app-b985da02.css",
+    "file": "assets/app-f55bb067.css",
     "isEntry": true,
     "src": "resources/scss/app.scss"
   }

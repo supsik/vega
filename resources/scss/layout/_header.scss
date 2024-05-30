@@ -2,6 +2,7 @@
     padding-top: 10px;
     position: relative;
     &__ngc {
+        display: none;
         color: #BF1673;
         @include base-transition(color);
 
