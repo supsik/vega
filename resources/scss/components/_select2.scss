@@ -1,0 +1,24 @@
+.select2 {
+	&-selection__rendered {
+		padding-left: 15px!important;
+		line-height: 41px !important;
+		color: $dark!important;
+	}
+	&-container &-selection--single {
+		border-radius: 10px;
+		height: 41px !important;
+	}
+	&-selection__arrow {
+		height: 41px !important;
+	}
+	
+}
+
+
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+	background-color: $main!important;
+}
+
+.select2-container--default .select2-search--dropdown .select2-search__field {
+	outline: none;
+}

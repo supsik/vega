@@ -1,0 +1,91 @@
+.employee-page {
+	&__position {
+		margin: 20px 0;
+		font-size: 20px;
+		font-weight: 700;
+		color: $dark;
+	}
+
+	&__price {
+		margin-bottom: 20px;
+		padding: 20px;
+		background-color: $secondary;
+		font-size: 16px;
+		border-radius: 20px;
+		color: $dark;
+		strong {
+			margin-left: 15px;
+		}
+	}
+
+	&__photo {
+		display: flex;
+		justify-content: center;
+		img {
+			width: 400px;
+			height: 400px;
+			object-fit: cover;
+			border-radius: 50%;
+		}
+	}
+
+	&__text {
+		padding-right: 40px;
+		font-size: 16px;
+		color: $dark;
+		p:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&__form {
+		max-width: 700px;
+		margin-top: 40px;
+	}
+
+	@media screen and (max-width: 1199px) {
+		&__photo {
+			img {
+				width: 300px;
+				height: 300px;
+			}
+		}
+		&__text {
+			margin-top: 40px;
+		}
+	}
+	
+	@media screen and (max-width: 991px) {
+		&__photo {
+			img {
+				width: 200px;
+				height: 200px;
+			}
+		}
+	}
+	
+	@media screen and (max-width: 767px) {
+		&__position {
+			font-size: 18px;
+		}
+		&__photo {
+			justify-content: flex-start;
+			img {
+				width: 300px;
+				height: 300px;
+			}
+		}
+	}
+	
+	@media screen and (max-width: 575px) {
+		&__text {
+			padding-right: 0;
+		}
+		&__photo {
+			img {
+				width: 200px;
+				height: 200px;
+			}
+		}
+	}
+}

@@ -1,0 +1,28 @@
+.btn {
+	&-main {
+		@include button-variant(
+			$main,
+			$main,
+			$white,
+			$dark,
+			$dark,
+			$white,
+			$dark,
+			$dark,
+			$white,
+		)
+	}
+	&-outline-main {
+		@include button-variant(
+			transparent,
+			$main,
+			$main,
+			$dark,
+			$dark,
+			$white,
+			$dark,
+			$dark,
+			$white,
+		)
+	}
+}

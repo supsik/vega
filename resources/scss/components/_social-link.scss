@@ -1,0 +1,24 @@
+.social-link {
+    width: 35px;
+    height: 35px;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 2px solid $dark;
+    fill: $dark;
+    @include base-transition(border);
+
+    &:hover {
+        border-color: $main;
+
+        .social-link__icon {
+            fill: $main !important;
+        }
+    }
+
+    &__icon {
+        @include base-transition(fill);
+    }
+}

@@ -1,0 +1,57 @@
+.person {
+	&--link {
+		text-decoration: none;
+		&:hover {
+			.person__name, .person__position {
+				color: $main;
+			}
+		}
+	}
+	&__photo {
+		width: 200px;
+		height: 200px;
+		margin-bottom: 10px;
+		border-radius: 50%;
+		object-fit: cover;
+	}
+	&__info {
+		max-width: 200px;
+        text-align: center;
+	}
+	&__name {
+		margin-bottom: 0;
+		font-size: 16px;
+		font-weight: 700;
+		color: $dark;
+		@include base-transition(color);
+	}
+	&__position {
+		font-size: 14px;
+		color: $dark;
+		@include base-transition(color);
+	}
+
+	@media screen and (max-width: 991px) {
+		&__photo {
+			width: 150px;
+			height: 150px;
+		}
+        &__info {
+            max-width: 150px;
+        }
+		&__name, &__position {
+			font-size: 14px;
+		}
+	}
+
+	@media screen and (max-width: 360px) {
+		&__photo {
+			width: 120px;
+			height: 120px;
+		}
+        &__info {
+            max-width: 120px;
+        }
+	}
+
+}

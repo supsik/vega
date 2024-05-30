@@ -1,0 +1,2 @@
+<div <?php echo e($attributes->class(['form-hint']), false); ?>><?php echo e($slot ?? '', false); ?></div>
+<?php /**PATH /var/www/vendor/moonshine/moonshine/resources/views/components/form/hint.blade.php ENDPATH**/ ?>

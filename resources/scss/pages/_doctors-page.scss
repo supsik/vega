@@ -1,0 +1,28 @@
+.doctors-page {
+	&__list {
+		display: flex;
+		flex-direction: column;
+		row-gap: 70px;
+	}
+	&__filter {
+		.filter__wrapper::before {
+			border-bottom-width: 156px;
+		}
+	}
+	@media screen and (max-width: 991px) {
+		&__list {
+			row-gap: 40px;
+		}
+	}
+	@media screen and (max-width: 768px) {
+		&__inner{
+			.row{flex-direction: column-reverse;}
+			.specialists-section{margin-bottom: 20px;}
+		}
+	}
+	@media screen and (max-width: 575px) {
+		&__list {
+			row-gap: 30px;
+		}
+	}
+}

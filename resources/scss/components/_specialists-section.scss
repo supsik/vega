@@ -1,0 +1,35 @@
+.specialists-section {
+	padding-left: 40px;
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-row-gap: 40px;
+		justify-items: center;
+	}
+
+	
+	@media screen and (max-width: 1199px) {
+		&__list {
+			grid-template-columns: repeat(1, 1fr);
+			justify-items: start;
+		}
+	}
+
+	@media screen and (max-width: 991px) {
+		padding-left: 20px;
+	}
+
+	@media screen and (max-width: 767px) {
+		padding-left: 0;
+
+		&__list {
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
+
+	@media screen and (max-width: 575px) {
+		&__list {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+}

@@ -1,0 +1,84 @@
+.schedule-carousel {
+    &__title {
+        padding: 20px 0;
+        font-size: 24px;
+        margin-bottom: 0;
+    }
+
+    &__item {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__el {
+        width: 20%;
+    }
+
+    &__controls {
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        column-gap: 15px;
+
+        .carousel-btn {
+            border-radius: 50%;
+        }
+    }
+
+    &__nav {
+        overflow-x: auto;
+        padding-bottom: 5px;
+        margin-bottom: 5px;
+        display: flex;
+        column-gap: 10px;
+
+        scrollbar-heigth: thin;
+        scrollbar-color: $main $main;
+
+        /* Работает в Chrome, Edge и Safari */
+        &::-webkit-scrollbar {
+            height: 4px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: #F6F5F5;
+            border-radius: 20px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: $main;
+            border-radius: 20px;
+            border: none;
+        }
+
+        &-btn {
+            font-size: 14px;
+            border-radius: 20px;
+
+            &.active {
+                border-color: $main;
+                background-color: $main;
+            }
+        }
+    }
+
+    @media screen and (max-width: 991px) {
+        &__title {
+            padding: 10px 0;
+        }
+        &__controls {
+            .carousel-btn {
+                width: 40px;
+                height: 40px;
+                background-size: 25px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 575px) {
+        &__title {
+            font-size: 20px;
+        }
+    }
+
+}

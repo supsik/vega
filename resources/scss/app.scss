@@ -1,0 +1,26 @@
+// Выходной файл, в котором объединяются все стили
+@import 'base/glob';
+@import 'vendors/glob';
+@import 'components/glob';
+@import 'layout/glob';
+@import 'pages/glob';
+
+@media screen and (max-width: 1399px) {
+
+}
+
+@media screen and (max-width: 1199px) {
+
+}
+
+@media screen and (max-width: 991px) {
+
+}
+
+@media screen and (max-width: 767px) {
+
+}
+
+@media screen and (max-width: 575px) {
+
+}

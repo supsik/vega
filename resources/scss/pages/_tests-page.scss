@@ -1,0 +1,10 @@
+.tests-page {
+	&__filter {
+		.filter__wrapper::before {
+			border-bottom-width: 101px;
+		}
+	}
+	&__calc {
+		padding-top: 40px;
+	}
+}

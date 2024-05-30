@@ -1,0 +1,1 @@
+components.schedule.slider-item

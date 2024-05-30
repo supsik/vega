@@ -1,0 +1,38 @@
+// Содержит отдельные компоненты с отдельным файлом .scss для каждого из них.
+
+@import 'btn';
+@import 'breadcrumb';
+@import 'nav-tabs';
+@import 'accordion';
+@import 'select2';
+@import 'flash';
+
+@import 'carousel-btn';
+@import 'home-carousel';
+@import 'text-carousel';
+@import 'diagnostics-carousel';
+@import 'diagnostic-card';
+@import 'schedule-carousel';
+@import 'schedule-item';
+
+@import 'about-section';
+@import 'documents-section';
+@import 'contacts-section';
+@import 'doctors-section';
+@import 'specialists-section';
+@import 'text-section';
+@import 'video-section';
+
+@import 'social-link';
+@import 'news';
+@import 'news-card';
+@import 'appointment-doctor';
+@import 'person';
+@import 'search-form';
+@import 'filter';
+@import 'contact-form';
+@import 'price-list';
+@import 'calc-result';
+@import 'map';
+@import 'phone-verification';
+@import 'user-menu';

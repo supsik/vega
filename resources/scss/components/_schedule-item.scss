@@ -1,0 +1,33 @@
+.schedule-item {
+    padding: 10px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: $dark;
+    font-size: 16px;
+    text-align: center;
+    @include base-transition(background-color);
+
+    &:hover {
+        color: inherit;
+
+        .schedule-item {
+            &__time {
+                background-color: $dark;
+                color: $white;
+            }
+        }
+    }
+
+    &__time {
+        width: 100%;
+        padding: 5px;
+        font-weight: 700;
+        text-align: center;
+        color: #000;
+        border-radius: 20px;
+        background-color: #f6f5f5;
+        @include base-transition(all);
+    }
+}

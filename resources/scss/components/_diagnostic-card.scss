@@ -1,0 +1,128 @@
+.diagnostic-card {
+    position: relative;
+    border-radius: 20px;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    text-decoration: none;
+    -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+
+    &:hover {
+        .diagnostic-card__image {
+            transform: scale(1.1);
+        }
+
+        .diagnostic-card__name {
+            color: $dark;
+        }
+    }
+
+    &__image {
+
+        @include base-transition(transform)
+    }
+
+    &__name {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 2;
+        padding: 10px;
+        display: block;
+        font-size: 16px;
+        text-align: center;
+        color: $white;
+        background-color: $main;
+        @include base-transition(color)
+    }
+
+
+    @media screen and (max-width: 1399px) {
+        // height: 147px;
+    }
+
+    @media screen and (max-width: 1199px) {
+        &__name {
+            padding: 5px;
+            font-size: 14px;
+        }
+    }
+
+    @media screen and (max-width: 991px) {
+    }
+
+    @media screen and (max-width: 767px) {
+    }
+
+    @media screen and (max-width: 575px) {
+        &__name {
+            font-size: 12px;
+        }
+    }
+}
+.services__h2 {
+    font-family: 'Panton';
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 61px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 40px;
+}
+.services-canvas
+{
+    @media screen and (max-width: 575px) {
+        width: 70px !important;
+        height: 70px !important;
+    }
+}
+.services-card
+{
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 30px;
+    text-decoration: none;
+
+
+
+    &__name {
+        font-family: 'Panton';
+        font-size: 20px;
+        margin-bottom: 6px;
+        font-weight: 700;
+        line-height: 20px;
+        color: #3C515C;
+        @media screen and (min-width: 767px){font-size: 18px;}
+    }
+    &__description
+    {
+        font-family: 'Panton';
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 18px;
+        color:#ACB5BB;
+        @media screen and (min-width: 767px)
+        {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+    }
+    @media screen and (min-width: 767px) {
+        justify-content: flex-start;
+        align-items: center;
+        &__name { font-size: 16px;}
+        &__description
+        { 
+            font-size: 12px;
+            margin-bottom: 2px;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 16px;
+        }
+    }
+
+}

@@ -1,0 +1,106 @@
+.about-section {
+    &__title {
+        font-size: 38px;
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        position: relative;
+        padding-top: 80px;
+        display: flex;
+        justify-content: space-between;
+        column-gap: 50px;
+        font-size: 16px;
+        color: $dark;
+
+        &--dots {
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 50px;
+                height: 50px;
+                background: url('../images/kavychki.png') no-repeat center / contain;
+            }
+        }
+    }
+
+    &__text-column {
+        flex-grow: 1;
+    }
+
+    &__person {
+        .person__info {
+            max-width: 200px;
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 991px) {
+        &__text {
+            column-gap: 30px;
+        }
+        &__person {
+            .person__name {
+                font-size: 16px;
+            }
+
+            .person__info {
+                max-width: 150px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        &__title {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        &__text {
+            column-gap: 0;
+            flex-wrap: wrap;
+        }
+        &__text-column {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 575px) {
+        &__title {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+        &__text {
+            margin-top: 15px;
+            padding-top: 40px;
+
+            &::before {
+                width: 30px;
+                height: 30px;
+                background: url('../images/kavychki.png') no-repeat center / contain;
+            }
+        }
+        &__person {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .person__info {
+                padding-left: 20px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 360px) {
+        &__person {
+            .person {
+                &__photo {
+                    width: 150px;
+                    height: 150px;
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,10 @@
+.g-btn-up
+{
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    @media screen and (min-width: 767px){display: none;}
+}

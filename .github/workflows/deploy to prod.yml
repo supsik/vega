@@ -1,0 +1,16 @@
+name: Mega prod deploy
+on: workflow_dispatch
+jobs:
+  deploy_to_prod:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: fifsky/ssh-action@master
+      with:
+        command: |
+          cd /srv/mega-clinic.ru/www/
+          git checkout main --force
+          git fetch https://${{ secrets.ROB_GITHUB_TOKEN }}@github.com/odvapro/mega.git
+          git pull https://odva:${{ secrets.ROB_GITHUB_TOKEN }}@github.com/odvapro/mega.git
+        host: ${{ secrets.MEGA_PROD_HOST }}
+        user: root
+        key: ${{ secrets.PRIVATE_KEY }}

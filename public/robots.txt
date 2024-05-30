@@ -1,0 +1,19 @@
+User-agent: *
+Disallow: /admin
+Disallow: /admin/
+Disallow: /admin/login
+Disallow: /admin/login/
+Disallow: /account
+Disallow: /account/
+Disallow: /account?
+Disallow: /appointment
+Disallow: /appointment/
+Disallow: /appointment?
+Disallow: /search
+Disallow: /search?
+Disallow: /user
+Disallow: /user/
+Disallow: /user/appointment/
+
+Host: https://mega-clinic.ru/
+Sitemap: https://mega-clinic.ru/sitemap.xml

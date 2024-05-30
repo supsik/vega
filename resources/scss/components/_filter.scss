@@ -1,0 +1,53 @@
+.filter {
+	margin-top: 30px;
+	padding-left: 170px;
+	&__wrapper {
+		position: relative;
+		padding: 30px;
+		background-color: $dark;
+		&::before {
+			content: '';
+			position: absolute;
+			left: -70px;
+			top: 0;
+			width: 0;
+			height: 0;
+			border: 0 solid transparent;
+			border-top-width: 0px;
+			border-right: 70px solid $dark;
+		}
+	}
+	&__input {
+		width: 100%;
+		padding: 10px 15px;
+		border-radius: 10px;
+		border: none;
+		outline: none;
+		background-color: $secondary;
+	}
+
+	@media screen and (max-width: 1399px) {
+
+	}
+	
+	@media screen and (max-width: 1199px) {
+	
+	}
+	
+	@media screen and (max-width: 991px) {
+	
+	}
+	
+	@media screen and (max-width: 767px) {
+	
+	}
+	
+	@media screen and (max-width: 575px) {
+		padding-left: 0;
+		&__wrapper {
+			&::before {
+				display: none;
+			}
+		}
+	}
+}

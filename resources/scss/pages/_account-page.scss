@@ -1,0 +1,20 @@
+.account-page {
+    &__form {
+        border-radius: 0;
+    }
+}
+
+.login-links {
+    display: flex;
+    column-gap: 10px;
+
+    a {
+        color: #000;
+        text-decoration: none;
+        @include base-transition(color);
+
+        &:hover {
+            color: $main;
+        }
+    }
+}

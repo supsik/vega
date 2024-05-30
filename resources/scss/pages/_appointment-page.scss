@@ -1,0 +1,344 @@
+.appointment-page {
+	&__list {
+		max-width: 800px;
+		margin: 0 auto;
+	}
+	&__list-title
+	{
+		text-align: center;
+		color: $dark;
+		margin-bottom: 20px;
+		font-size: 24px;
+		line-height: 30px;
+		font-weight: 700;
+	}
+	&__select
+	{
+		&.hide { display: none; }
+	}
+	&__select-action
+	{
+		width: 100%;
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+		gap: 20px;
+	}
+	&__select-btn
+	{
+		width: 100%;
+		color: $dark;
+		font-size: 16px;
+		line-height: 22px;
+		font-weight: 700;
+		padding: 23px 0;
+		border: none;
+		border-radius: 10px;
+		background: $accordion-button-bg;
+		transition: .3s all ease;
+
+		&:hover
+		{
+			background-color: $main;
+			color: $white;
+		}
+	}
+
+	&__accordion,
+	.main-accordion
+	{
+		display: none;
+
+		&.show
+		{
+			display: block;
+		}
+	}
+
+	&__search-input
+	{
+		display: none;
+
+		&.show
+		{
+			display: block;
+			margin: auto;
+			margin-bottom: 10px;
+			width: calc(100% - 40px);
+		}
+	}
+
+	&__doctors-list {
+		display: flex;
+		flex-direction: column;
+		row-gap: 15px;
+	}
+
+	&__scroll {
+		max-height: 500px;
+		overflow-y: auto;
+		padding-top: 0;
+		padding-bottom: 0;
+
+		scrollbar-width: thin;
+		scrollbar-color: $main $main;
+
+		/* Работает в Chrome, Edge и Safari */
+		&::-webkit-scrollbar {
+			width: 5px;
+		}
+
+		&::-webkit-scrollbar-track {
+			background: #F6F5F5;
+			border-radius: 20px;
+		}
+
+		&::-webkit-scrollbar-thumb {
+			background-color: $main;
+			border-radius: 20px;
+			border: none;
+		}
+	}
+
+	.accordion-header
+	{
+		&.hide
+		{
+			display: none;
+		}
+	}
+
+	.accordion-button { font-weight: 400; }
+
+	.accordion-button--heading
+	{
+		justify-content: space-between;
+		font-weight: 700;
+		margin-bottom: 10px;
+
+		&:after { display: none; }
+
+		&.collapsed
+		{
+			.accordion-button__select
+			{
+				display: block;
+				color: $white;
+				background: $dark;
+				border-color: $dark;
+
+				&:hover
+				{
+					background: $main;
+					border-color: $main;
+				}
+			}
+		}
+
+		&.selected
+		{
+			color: $white;
+			background-color: $dark;
+			.accordion-button__step
+			{
+				display: none;
+			}
+
+			.accordion-button__text
+			{
+				margin-left: 0;
+			}
+
+			.accordion-button__select
+			{
+				color: $dark;
+				background-color: $accordion-button-bg;
+
+				&:hover { color: $white; }
+			}
+		}
+
+		.accordion-button__step
+		{
+			position: absolute;
+			top: 0;
+			left: 0;
+			color: $white;
+			background: $main;
+			border-radius: 10px 0 0 10px;
+			height: 100%;
+			width: 100px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.accordion-button__text
+		{
+			margin-left: 100px;
+		}
+
+		.accordion-button__select
+		{
+			display: none;
+		}
+	}
+
+	.accordion-collapse
+	{
+		&.visible
+		{
+			display: block;
+
+			.accordion-body
+			{
+				padding-top: 0;
+				padding-bottom: 0;
+			}
+		}
+	}
+
+	.accordion-element
+	{
+		&.hide { display: none; }
+	}
+
+	.price-list__wrapper
+	{
+		&:not(:last-child) { margin-bottom: 10px; }
+	}
+
+	.price-list__item
+	{
+		justify-content: space-between;
+	}
+
+	.price-list__item-name
+	{
+		margin-right: 0;
+		flex-basis: 50%;
+	}
+
+	.price-list__item-action
+	{
+		flex-basis: 22%;
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	.price-list__item-disable,
+	.price-list__item-btn
+	{
+		margin-left: 0;
+	}
+
+	.price-list__item-disable
+	{
+		text-decoration: none;
+		color: $main;
+		font-weight: 700;
+		transition: .3s all ease;
+
+		&:hover
+		{
+			color: $dark;
+		}
+	}
+
+	.account-page__form
+	{
+		border-radius: 10px;
+		padding: 20px;
+	}
+
+	&__actions
+	{
+		display: flex;
+		gap: 10px;
+		justify-content: flex-end;
+	}
+
+	.appointment-page__doctors-list { gap: 10px; }
+
+	.appointment-doctor
+	{
+		padding: 10px 20px;
+		background-color: $secondary;
+		border-radius: 10px;
+		justify-content: space-between;
+
+		&__info
+		{
+			flex-direction: row;
+			align-items: center;
+			padding-left: 0;
+			gap: 10px;
+		}
+
+		&__photo
+		{
+			width: 50px;
+			height: 50px;
+		}
+
+		&__name
+		{
+			font-weight: 400;
+			color: #000;
+		}
+
+		&__btn
+		{
+			margin-top: 0;
+		}
+	}
+
+	@media screen and (max-width: 575px) {
+		.accordion-button {
+			font-size: 16px;
+		}
+	}
+
+	@media (min-width:768px) {
+		&__list-title
+		{
+			font-size: 30px;
+			line-height: 37px;
+		}
+		&__select-btn
+		{
+			font-size: 20px;
+			line-height: 24px;
+			max-width: 390px;
+		}
+		.accordion-button
+		{
+			&__select
+			{
+				font-size: 16px;
+				line-height: 22px;
+				padding: 8px 20px;
+			}
+		}
+		.price-list__item-btn,
+		.appointment-doctor__btn
+		{
+			font-size: 16px;
+			line-height: 22px;
+			padding: 8px 20px;
+		}
+		&__actions-btn
+		{
+			font-size: 20px;
+			line-height: 24px;
+		}
+	}
+}
+
+.accordion-button__schedule-full
+{
+	font-size: 20px;
+	font-style: italic; 
+}
+
+.appointment-page .account-page__form-checkbox {top: 15px;}

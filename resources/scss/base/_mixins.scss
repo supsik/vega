@@ -1,0 +1,3 @@
+@mixin base-transition($style, $ms: 200ms) {
+	transition: $style ease-in-out $ms;
+}

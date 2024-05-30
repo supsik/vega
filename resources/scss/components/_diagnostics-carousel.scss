@@ -1,0 +1,73 @@
+.diagnostics-carousel {
+    &--mobile {
+        display: none;
+    }
+
+    &__inner {
+        position: relative;
+        padding: 0 140px;
+
+        .carousel-item {
+            padding: 10px;
+        }
+    }
+
+    &__wrapper {
+
+    }
+
+    &__prev-btn, &__next-btn {
+        position: absolute;
+        top: 50%;
+    }
+
+    &__prev-btn {
+        border-radius: 50%;
+        left: 0;
+        transform: translateY(-50%) rotate(180deg);
+    }
+
+    &__next-btn {
+        border-radius: 50%;
+        right: 0;
+        transform: translateY(-50%);
+    }
+
+    @media screen and (max-width: 991px) {
+        &__inner {
+            padding: 0 90px;
+        }
+        &__prev-btn, &__next-btn {
+            width: 40px;
+            height: 40px;
+            background-size: 25px;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        &--mobile {
+            display: block;
+        }
+        &--desk {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 575px) {
+        &__inner {
+            padding: 0 0 70px 0;
+        }
+        &__prev-btn {
+            margin-top: -20px;
+            margin-left: -47.5px;
+            left: 50%;
+            top: 100%;
+        }
+        &__next-btn {
+            margin-top: -20px;
+            margin-right: -47.5px;
+            right: 50%;
+            top: 100%;
+        }
+    }
+}

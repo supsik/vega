@@ -1,0 +1,37 @@
+$font-family-sans-serif: Panton, sans-serif;
+
+$main-border-radius: 24px;
+$btn-border-radius:  $main-border-radius;
+$input-border-radius:  $main-border-radius;
+
+$input-padding-y: 10px;
+$input-padding-x: 15px;
+
+// Accordion
+$accordion-button-color:                  $dark;
+$accordion-button-bg:                     #F6F5F5;
+$accordion-button-active-bg:             	$dark;
+$accordion-button-active-color:           $white;
+$accordion-button-padding-y:              20px;
+$accordion-button-padding-x:              20px;
+
+// Pagination
+$pagination-color:                  $white;
+$pagination-bg:                     $main;
+
+$pagination-border-color:           $main;
+
+$pagination-focus-color:            $white;
+$pagination-focus-bg:               $main;
+$pagination-focus-box-shadow:       none;
+$pagination-focus-outline:          0;
+
+$pagination-hover-color:            $white;
+$pagination-hover-bg:               darken($main, 2);
+$pagination-hover-border-color:     darken($main, 2);
+
+$pagination-active-color:           $white;
+$pagination-active-bg:              $dark;
+
+$pagination-disabled-color:         $dark;
+
