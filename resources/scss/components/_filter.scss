@@ -24,24 +24,8 @@
 		border: none;
 		outline: none;
 		background-color: $secondary;
+		color: $white !important;
 	}
-
-	@media screen and (max-width: 1399px) {
-
-	}
-	
-	@media screen and (max-width: 1199px) {
-	
-	}
-	
-	@media screen and (max-width: 991px) {
-	
-	}
-	
-	@media screen and (max-width: 767px) {
-	
-	}
-	
 	@media screen and (max-width: 575px) {
 		padding-left: 0;
 		&__wrapper {

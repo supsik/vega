@@ -12,18 +12,6 @@
         column-gap: 50px;
         font-size: 16px;
         color: $dark;
-
-        &--dots {
-            &::before {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 50px;
-                height: 50px;
-                background: url('../images/kavychki.png') no-repeat center / contain;
-            }
-        }
     }
 
     &__text-column {
