@@ -11,7 +11,7 @@
 			<div class="appointment-page__list section-top-space">
 
 				<div class="appointment-page__select {{ $this->mode != '' ? 'hide' : '' }}">
-					<h2 class="appointment-page__list-title">Начните запись на прием с выбора МегаДоктора или услуги</h2>
+					<h2 class="appointment-page__list-title">Начните запись на прием с выбора VegaДоктора или услуги</h2>
 
 					<div class="appointment-page__select-action">
 						<button
@@ -19,7 +19,7 @@
 							data-action="doctors"
 							wire:click="setMode('doctors')"
 						>
-							Выбрать МегаДоктора
+							Выбрать VegaДоктора
 						</button>
 						<button
 							class="appointment-page__select-btn _service-select"
@@ -153,7 +153,7 @@
 									{{ $selectedDoctor?->exists ? 'Назад' : '' }}
 								</div>
 								<div class="accordion-button__step">Шаг 2</div>
-								<span class="accordion-button__text">{{ $selectedDoctor?->exists ? "МегаДоктор: $selectedDoctor->fullName" : 'Выбрать МегаДоктора' }}</span>
+								<span class="accordion-button__text">{{ $selectedDoctor?->exists ? "VegaДоктор: $selectedDoctor->fullName" : 'Выбрать VegaДоктора' }}</span>
 
 								<div class="accordion-button__select btn" style="{{ $selectedDoctor?->exists ? 'display:none;' : '' }}">
 									{{ $selectedDoctor?->exists ? '' : 'Выбрать' }}
@@ -223,7 +223,7 @@
 
 								@if(count($schedule_first))
 									<livewire:schedule
-										title="Запись в Клинику МЕГА на Доватора, 22"
+										title="Запись в Клинику Vega на Доватора, 22"
 										:clinicId="1" :schedule="$schedule_first"
 										:doctor="$selectedDoctor"
 										:fromAppointment="true"></livewire:schedule>
@@ -231,7 +231,7 @@
 
 								@if(count($schedule_second))
 									<livewire:schedule
-										title="Запись в Клинику МЕГА на Весенней, 7А"
+										title="Запись в Клинику Vega на Весенней, 7А"
 										:clinicId="4"
 										:schedule="$schedule_second"
 										:doctor="$selectedDoctor"
@@ -277,7 +277,7 @@
 									{{ $selectedDoctor?->exists ? 'Назад' : '' }}
 								</div>
 								<div class="accordion-button__step">Шаг 1</div>
-								<span class="accordion-button__text">{{ $selectedDoctor?->exists ? "МегаДоктор: $selectedDoctor->fullName" : 'Выбрать МегаДоктора' }}</span>
+								<span class="accordion-button__text">{{ $selectedDoctor?->exists ? "VegaДоктор: $selectedDoctor->fullName" : 'Выбрать VegaДоктора' }}</span>
 								<div class="accordion-button__select btn" style="{{ $selectedDoctor?->exists ? 'display:none;' : '' }}">
 									{{ $selectedDoctor?->exists ? '' : 'Выбрать' }}
 								</div>
@@ -423,7 +423,7 @@
 
 								@if(count($schedule_first))
 									<livewire:schedule
-										title="Запись в Клинику МЕГА на Доватора, 22"
+										title="Запись в Клинику Vega на Доватора, 22"
 										:clinicId="1" :schedule="$schedule_first"
 										:doctor="$selectedDoctor"
 										:fromAppointment="true"></livewire:schedule>
@@ -431,7 +431,7 @@
 
 								@if(count($schedule_second))
 									<livewire:schedule
-										title="Запись в Клинику МЕГА на Весенней, 7А"
+										title="Запись в Клинику Vega на Весенней, 7А"
 										:clinicId="4"
 										:schedule="$schedule_second"
 										:doctor="$selectedDoctor"

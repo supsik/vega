@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', $doctor->seo_title ?? $doctor->full_name . ' - МегаДоктора - ' . config('app.name'))
+@section('title', $doctor->seo_title ?? $doctor->full_name . ' - VegaДоктора - ' . config('app.name'))
 @section('description', $doctor->seo_description ?? '')
 @section('keywords', $doctor->seo_keywords)
 
@@ -13,7 +13,7 @@
                     <div class="col-12 col-md-7">
                         <nav class="breadcrumb">
                             <x-breadcrumbs>
-                                <x-breadcrumbs.item link="{{ route('doctors.index') }}">МегаДоктора</x-breadcrumbs.item>
+                                <x-breadcrumbs.item link="{{ route('doctors.index') }}">VegaДоктора</x-breadcrumbs.item>
                                 <h1 class="breadcrumb__heading" itemprop = "employee">{{ $doctor->full_name }}</h1>
                             </x-breadcrumbs>
                         </nav>
@@ -49,7 +49,7 @@
 
                         @if(count($firstSchedule))
                             <livewire:schedule
-                                title="Запись в Клинику МЕГА на Доватора 22"
+                                title="Запись в Клинику VEGA на Доватора 22"
                                 :clinicId="1"
                                 :schedule="$firstSchedule"
                                 :doctor="$doctor"></livewire:schedule>
@@ -57,7 +57,7 @@
 
                         @if(count($secondSchedule))
                             <livewire:schedule
-                                title="Запись в Клинику МЕГА на Весенней 7А"
+                                title="Запись в Клинику VEGA на Весенней 7А"
                                 :clinicId="4"
                                 :schedule="$secondSchedule"
                                 :doctor="$doctor"></livewire:schedule>

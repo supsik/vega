@@ -44,13 +44,13 @@ class NavigationComposer
         $menu = Menu::make()
             ->add(
                 MenuItem::make('О клинике', null, [
-                    MenuItem::make('Клиника МЕГА', route('about')),
+                    MenuItem::make('Клиника Vega', route('about')),
                     MenuItem::make('Управление клиникой', route('team.index')),
                     MenuItem::make('Новости', route('news.index')),
                     MenuItem::make('Лицензии и сертификаты', route('documents')),
                 ])
             )
-            ->add(MenuItem::make('МегаДоктора', null, $specializationsMenuItems))
+            ->add(MenuItem::make('VegaДоктора', null, $specializationsMenuItems))
             ->add(MenuItem::make('Диагностика', null, $diagnosticsMenuItems))
             ->add(MenuItem::make('Хирургическое отделение', null, $operationsMenuItems))
             ->add(MenuItem::make('Анализы', route('analysis')))

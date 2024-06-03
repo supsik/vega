@@ -10,7 +10,7 @@
                 </a>
 
                 <a class="footer__ngc" href="{{ $variables->ngc_link }}" target="_blank">
-                    МЕГА <br>
+                    VEGA <br>
                     Клиника репродукции и генетики NGC
                 </a>
 
@@ -96,7 +96,7 @@
                             Политика конфиденциальности
                         </a>
                         <span class="footer__copyright-text">
-                            Copyright Клиника МЕГА, {{ date('Y') }}
+                            Copyright Клиника VEGA, {{ date('Y') }}
                         </span>
                     </div>
                 </div>

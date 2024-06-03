@@ -10,7 +10,7 @@
             <div class="about-page__inner">
 
                 <x-breadcrumbs>
-                    <h1 class="breadcrumb__heading">Клиника МЕГА</h1>
+                    <h1 class="breadcrumb__heading">Клиника Vega</h1>
                 </x-breadcrumbs>
 
                 <section class="about-section section-top-space">
@@ -37,7 +37,7 @@
                             @if($page->first_block_text)
                                 <div class="about-section__text pt-0">
                                     <div class="about-section__text-column">
-                                        <h2 class="section-title about-section__title">Клиника МЕГА</h2>
+                                        <h2 class="section-title about-section__title">Клиника Vega</h2>
                                         {!! $page->first_block_text !!}
                                     </div>
                                 </div>

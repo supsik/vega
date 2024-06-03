@@ -2,7 +2,7 @@
     <?php if($variables->ngc_link): ?>
         <div class="container-fluid d-none d-md-block">
             <a class="header__ngc" href="<?php echo e($variables->ngc_link, false); ?>" target="_blank">
-                МЕГА <br>
+                Vega <br>
                 Клиника репродукции и генетики NGC
             </a>
         </div>
@@ -15,13 +15,13 @@
                     <span></span>
                     <span></span>
                 </button>
-                <a class="header__logo navbar-brand p-0 d-md-none" href="<?php echo e(route('home'), false); ?>" itemprop="name" content="Мега Клиника">
+                <a class="header__logo navbar-brand p-0 d-md-none" href="<?php echo e(route('home'), false); ?>" itemprop="name" content="Vega Клиника">
                     <img class="d-inline-block align-text-top img-fluid" src="<?php echo e(Vite::image('mobile-logo.png'), false); ?>"
-                         alt="Мега Клиника">
+                         alt="Vega Клиника">
                 </a>
                 <a class="header__logo navbar-brand p-0 d-none d-md-block" href="<?php echo e(route('home'), false); ?>">
                     <img class="d-inline-block align-text-top img-fluid" src="<?php echo e(Vite::image('logo.png'), false); ?>"
-                         alt="Мега Клиника">
+                         alt="Vega Клиника">
                 </a>
                 <div class="header__top">
                     <div class="header__contact-list">

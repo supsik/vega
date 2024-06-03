@@ -45,7 +45,7 @@ class MoonShineServiceProvider extends ServiceProvider
                     ->icon('heroicons.outline.clipboard'),
             ])
                 ->icon('heroicons.outline.clipboard'),
-            MenuGroup::make('МегаВрачи', [
+            MenuGroup::make('VegaВрачи', [
                 MenuItem::make('Врачи', DoctorResource::class)
                     ->icon('heroicons.outline.users'),
                 MenuItem::make('Специальности', SpecialityResource::class)

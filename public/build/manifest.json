@@ -20,59 +20,59 @@
     "src": "resources/images/logo-ngc.png"
   },
   "resources/images/logo-ngc.svg": {
-    "file": "assets/logo-ngc-c18992c5.svg",
+    "file": "assets/logo-ngc-db1062f2.svg",
     "src": "resources/images/logo-ngc.svg"
   },
   "resources/images/logo-white.png": {
-    "file": "assets/logo-white-29ae39ed.png",
+    "file": "assets/logo-white-31dda821.png",
     "src": "resources/images/logo-white.png"
   },
   "resources/images/logo.png": {
-    "file": "assets/logo-21c84841.png",
+    "file": "assets/logo-9be3bd81.png",
     "src": "resources/images/logo.png"
   },
   "resources/images/mobile-logo.png": {
-    "file": "assets/mobile-logo-deba21ef.png",
-    "src": "resources/images/mobile-logo.png"
+    "file": "assets/logo-9be3bd81.png",
+    "src": "resources/images/logo.png"
   },
   "resources/images/persone.png": {
     "file": "assets/persone-e2e3166b.png",
     "src": "resources/images/persone.png"
   },
   "resources/images/svg/arrow.svg": {
-    "file": "assets/arrow-27f43f45.svg",
+    "file": "assets/arrow-0a427727.svg",
     "src": "resources/images/svg/arrow.svg"
   },
   "resources/images/svg/btn-up.svg": {
-    "file": "assets/btn-up-eebce78e.svg",
+    "file": "assets/btn-up-2cd75ad2.svg",
     "src": "resources/images/svg/btn-up.svg"
   },
   "resources/images/svg/close-white.svg": {
-    "file": "assets/close-white-73d5c790.svg",
+    "file": "assets/close-white-95401b59.svg",
     "src": "resources/images/svg/close-white.svg"
   },
   "resources/images/svg/close.svg": {
-    "file": "assets/close-8ba93e7d.svg",
+    "file": "assets/close-821c755e.svg",
     "src": "resources/images/svg/close.svg"
   },
   "resources/images/svg/lk-darck.svg": {
-    "file": "assets/lk-darck-0358b811.svg",
+    "file": "assets/lk-darck-30293751.svg",
     "src": "resources/images/svg/lk-darck.svg"
   },
   "resources/images/svg/lk.svg": {
-    "file": "assets/lk-473e611f.svg",
+    "file": "assets/lk-cfa15200.svg",
     "src": "resources/images/svg/lk.svg"
   },
   "resources/images/svg/phone-darck.svg": {
-    "file": "assets/phone-darck-7b5612ca.svg",
+    "file": "assets/phone-darck-6ba70ca4.svg",
     "src": "resources/images/svg/phone-darck.svg"
   },
   "resources/images/svg/phone.svg": {
-    "file": "assets/phone-8e49de26.svg",
+    "file": "assets/phone-98a24c2a.svg",
     "src": "resources/images/svg/phone.svg"
   },
   "resources/images/svg/vk.svg": {
-    "file": "assets/vk-4fe978af.svg",
+    "file": "assets/vk-4ea6d056.svg",
     "src": "resources/images/svg/vk.svg"
   },
   "resources/images/svg/youtube.svg": {
@@ -91,12 +91,12 @@
     "css": [
       "assets/app-0156f648.css"
     ],
-    "file": "assets/app-1853eba0.js",
+    "file": "assets/app-8f63c503.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   },
   "resources/scss/app.scss": {
-    "file": "assets/app-f55bb067.css",
+    "file": "assets/app-f4e7eebf.css",
     "isEntry": true,
     "src": "resources/scss/app.scss"
   }

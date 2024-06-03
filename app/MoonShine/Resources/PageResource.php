@@ -66,7 +66,7 @@ class PageResource extends Resource
                             ->hideOnIndex()
                             ->canSee(fn() => $this->isPageBySlug('home')),
 
-                        TinyMce::make('Клиника МЕГА', 'first_block_text')
+                        TinyMce::make('Клиника Vega', 'first_block_text')
                             ->toolbar(config('moonshine.tinymce.toolbar'))
                             ->nullable()
                             ->hideOnIndex()

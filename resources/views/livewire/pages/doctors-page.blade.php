@@ -1,11 +1,11 @@
-@section('title', 'МегаДоктора - ' . config('app.name'))
+@section('title', 'VegaДоктора - ' . config('app.name'))
 
 <div class="doctors-page">
     <div class="container-fluid">
         <div class="doctors-page__inner">
 
             <x-breadcrumbs>
-                <x-breadcrumbs.item isActive>МегаДоктора</x-breadcrumbs.item>
+                <x-breadcrumbs.item isActive>VegaДоктора</x-breadcrumbs.item>
             </x-breadcrumbs>
 
             <div class="filter doctors-page__filter">

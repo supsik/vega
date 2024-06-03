@@ -51,7 +51,7 @@ return [
     ],
     'footer' => [
         'nav' => [
-            '/' => 'Copyright Клиника МЕГА, '.date('Y'),
+            '/' => 'Copyright Клиника VEGA, '.date('Y'),
         ],
     ]
 ];

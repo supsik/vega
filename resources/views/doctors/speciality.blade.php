@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', $speciality->seo_title ??  $speciality->plural_name . ' - МегаДоктора - ' . config('app.name'))
+@section('title', $speciality->seo_title ??  $speciality->plural_name . ' - VegaДоктора - ' . config('app.name'))
 @section('description', $speciality->seo_description)
 @section('keywords', $speciality->seo_keywords)
 
@@ -10,7 +10,7 @@
             <div class="doctors-page__inner">
 
                 <x-breadcrumbs>
-                    <x-breadcrumbs.item link="{{ route('doctors.index') }}">МегаДоктора</x-breadcrumbs.item>
+                    <x-breadcrumbs.item link="{{ route('doctors.index') }}">VegaДоктора</x-breadcrumbs.item>
                     <x-breadcrumbs.item isActive>{{ $speciality->plural_name }}</x-breadcrumbs.item>
                 </x-breadcrumbs>
 
