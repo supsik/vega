@@ -3,7 +3,7 @@
         <div class="footer__inner">
             <div class="footer__left">
                 <a class="footer__logo" href="{{ route('home') }}">
-                    <img class="d-none d-lg-block align-text-top img-fluid" src="{{ Vite::image('logo.png') }}"
+                    <img class="d-none d-lg-block align-text-top img-fluid" src="{{ Vite::image('logo-white.png') }}"
                          alt="Логотип">
                     <img class="d-block d-lg-none align-text-top img-fluid" src="{{ Vite::image('logo-white.png') }}"
                          alt="Логотип">

@@ -75,15 +75,15 @@
                 <?php
 if (! isset($_instance)) {
     $html = \Livewire\Livewire::mount('operations-filter', [])->html();
-} elseif ($_instance->childHasBeenRendered('67vmtuT')) {
-    $componentId = $_instance->getRenderedChildComponentId('67vmtuT');
-    $componentTag = $_instance->getRenderedChildComponentTagName('67vmtuT');
+} elseif ($_instance->childHasBeenRendered('kY9p7Pz')) {
+    $componentId = $_instance->getRenderedChildComponentId('kY9p7Pz');
+    $componentTag = $_instance->getRenderedChildComponentTagName('kY9p7Pz');
     $html = \Livewire\Livewire::dummyMount($componentId, $componentTag);
-    $_instance->preserveRenderedChild('67vmtuT');
+    $_instance->preserveRenderedChild('kY9p7Pz');
 } else {
     $response = \Livewire\Livewire::mount('operations-filter', []);
     $html = $response->html();
-    $_instance->logRenderedChild('67vmtuT', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
+    $_instance->logRenderedChild('kY9p7Pz', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
 }
 echo $html;
 ?> </livewire:operations-filter>

@@ -1,22 +1,10 @@
 .footer {
     height: 520px;
-    background: linear-gradient(90deg, #fff 30%, #32505b 30%);
+    background: #0d548f;
     position: relative;
 
-    &::before {
-        content: '';
-        position: absolute;
-        left: calc(30% - 0.5px);
-        top: -0.5px;
-        width: 0;
-        height: 0;
-        border: 0 solid transparent;
-        border-bottom-width: 520px;
-        border-top-width: 0px;
-        border-left: 140px solid #fff;
-    }
-
     &__ngc {
+        display: none;
         margin-top: 30px;
         margin-bottom: 10px;
         color: #BF1673;
@@ -35,6 +23,7 @@
     &__left {
         display: flex;
         flex-direction: column;
+        padding-top: 40px;
     }
 
     &__right {
@@ -67,6 +56,11 @@
 
     &__logo {
         max-width: 240px;
+    }
+
+    &__logo--ngc
+    {
+        display: none;
     }
 
     &__info {
@@ -131,7 +125,7 @@
 
     @media screen and (max-width: 991px) {
         background: none;
-        background-color: #32505b;
+        background-color: #0d548f;
         height: auto;
         padding: 50px 0;
         &::before {
@@ -263,4 +257,3 @@
         }
     }
 }
-

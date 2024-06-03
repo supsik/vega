@@ -3,14 +3,14 @@
         <div class="footer__inner">
             <div class="footer__left">
                 <a class="footer__logo" href="<?php echo e(route('home'), false); ?>">
-                    <img class="d-none d-lg-block align-text-top img-fluid" src="<?php echo e(Vite::image('logo.png'), false); ?>"
+                    <img class="d-none d-lg-block align-text-top img-fluid" src="<?php echo e(Vite::image('logo-white.png'), false); ?>"
                          alt="Логотип">
                     <img class="d-block d-lg-none align-text-top img-fluid" src="<?php echo e(Vite::image('logo-white.png'), false); ?>"
                          alt="Логотип">
                 </a>
 
                 <a class="footer__ngc" href="<?php echo e($variables->ngc_link, false); ?>" target="_blank">
-                    МЕГА <br>
+                    VEGA <br>
                     Клиника репродукции и генетики NGC
                 </a>
 
@@ -144,7 +144,7 @@
                             Политика конфиденциальности
                         </a>
                         <span class="footer__copyright-text">
-                            Copyright Клиника МЕГА, <?php echo e(date('Y'), false); ?>
+                            Copyright Клиника VEGA, <?php echo e(date('Y'), false); ?>
 
                         </span>
                     </div>

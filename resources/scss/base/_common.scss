@@ -1,6 +1,5 @@
 html,
 body {
-	background-color: rgb(192, 227, 247);
 	height: 100%;
 	font-size: 14px;
 	font-weight: 400;
@@ -9,6 +8,11 @@ body {
 .container-fluid {
 	padding: 0 20px!important;
 	max-width: 1380px;
+}
+
+.button_efd2
+{
+	display: none;
 }
 
 .bg-overlay {
@@ -260,7 +264,7 @@ textarea {
 
 .account-page__password div:hover > svg path
 {
-	stroke: #a1bf3e;
+	stroke: #83b2fc;
 	transition: .3s;
 }
 .account-page__form-error
@@ -271,7 +275,7 @@ textarea {
 {
 	display: block;
 	width: 100%;
-	color: #a1bf3e;
+	color: #83b2fc;
 	font-size: 38px;
 	font-weight: 700;
 	line-height: 1em;

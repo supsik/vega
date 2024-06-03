@@ -22,9 +22,9 @@
         grid-column-gap: 40px;
         grid-row-gap: 0px;
         grid-template-areas:
-			"logo top top top"
-			"logo search search search"
-			"logo menu menu menu";
+            "logo top top top"
+            "logo search search search"
+            "logo menu menu menu";
         & > .header__burger
         {
             display: flex;
@@ -50,7 +50,7 @@
             {
                 display: flex;
                 position: absolute;
-                background-color: #a1bf3e;
+                background-color: #83b2fc;
                 border: none;
                 width: 60px;
                 height: 60px;
@@ -99,7 +99,7 @@
 
         .dropdown-item {
             padding: 5px 15px;
-            background-color: #a1bf3e;
+            background-color: #83b2fc;
             &:hover {
                 background-color: $main;
                 color: $white;
@@ -205,10 +205,10 @@
         .dropdown-menu {
         padding: 0;
         border-radius: $main-border-radius;
-        background-color: #a1bf3e;
+        background-color: #83b2fc;
         max-height: 400px;
         overflow-y: auto;
-        border: 15px solid #a1bf3e;
+        border: 15px solid #83b2fc;
         scrollbar-width: thin;
         scrollbar-color: $main $main;
 
@@ -369,10 +369,10 @@
     @media screen and (max-width: 1199px) {
         &__inner {
             grid-template-areas:
-				"logo top  top top"
-				"logo search search search"
-				"feedback feedback feedback feedback"
-				"menu menu menu menu";
+                "logo top  top top"
+                "logo search search search"
+                "feedback feedback feedback feedback"
+                "menu menu menu menu";
         }
         &__logo {max-width: 160px;}
         &__phones {
@@ -418,8 +418,8 @@
         //padding-right: 80px;
         &__inner {
             grid-template-areas:
-				"logo logo top top"
-				"logo logo search search"
+                "logo logo top top"
+                "logo logo search search"
                 "feedback feedback feedback feedback"
                 "menu menu menu menu";
         }
@@ -449,7 +449,7 @@
             width: 300px;
             height: 100%;
             z-index: 10;
-            background-color: #a1bf3e;
+            background-color: #83b2fc;
             gap:10px ;
             overflow-y: auto;
             &.active {
@@ -474,7 +474,7 @@
             .dropdown-item {
                 padding-left: 40px;
                 gap:10px;
-                background-color: #a1bf3e;
+                background-color: #83b2fc;
             }
         }
         &__burger {
@@ -593,7 +593,7 @@
             grid-row-gap: 0px;
 
             grid-template-areas:
-			"burger logo logo top top top"
+            "burger logo logo top top top"
             "mobile mobile mobile mobile mobile mobile"
             "mobserch mobserch mobserch mobserch mobserch mobserch";
         }
@@ -623,7 +623,7 @@
             height: 18px;
             width: 18px;
             border-radius: 50%;
-            background-color: #a1bf3e;
+            background-color: #83b2fc;
             bottom: 34px;
             z-index: 1;
             left: 33px;
