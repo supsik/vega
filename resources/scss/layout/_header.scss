@@ -1,15 +1,6 @@
 .header {
     padding-top: 10px;
     position: relative;
-    &__ngc {
-        display: none;
-        color: #BF1673;
-        @include base-transition(color);
-
-        &:hover {
-            color: $dark;
-        }
-    }
     &__close-btn {
         display: none;
     }
@@ -75,6 +66,10 @@
     &__logo {
         grid-area: logo;
         margin-left: 13px;
+
+        @media screen and (max-width: 767px) {
+            margin-bottom: 25px;
+        }
     }
 
     &__social {
@@ -280,7 +275,6 @@
             &-btn {
                 padding: 3px 20px;
                 font-size: 16px;
-                color: #fff;
             }
 
             .dropdown-menu {
@@ -369,7 +363,6 @@
         &__link-btn {
             padding: 8px 15px;
             font-size: 14px;
-            margin: 5px
         }
     }
 
@@ -697,9 +690,7 @@
 
                     &::before {
                         @include base-transition(background-color);
-                        background: url('../images/svg/phone-darck.svg'), -webkit-linear-gradient(135deg, rgb(233, 240, 209), rgb(255, 255, 255) 70%);
-                        background: url('../images/svg/phone-darck.svg'), -moz-linear-gradient(135deg, rgb(233, 240, 209), rgb(255, 255, 255) 70%);
-                        background: url('../images/svg/phone-darck.svg'), linear-gradient(135deg, rgb(233, 240, 209), rgb(255, 255, 255) 70%);
+                        background: url('../images/svg/phone-darck.svg'), linear-gradient(135deg, $main, rgb(255, 255, 255) 70%);
                         background-repeat: no-repeat;
                         background-position: center center;
                     }
@@ -731,9 +722,7 @@
                 line-height: 18px;
                 margin: 0;
                 &:active, &:focus, &:hover {
-                        background: -webkit-linear-gradient(135deg, rgb(233, 240, 209), rgb(255, 255, 255) 70%);
-                        background: -moz-linear-gradient(135deg, rgb(233, 240, 209), rgb(255, 255, 255) 70%);
-                        background: linear-gradient(135deg, rgb(233, 240, 209), rgb(255, 255, 255) 70%);
+                        background: linear-gradient(135deg, $main, rgb(255, 255, 255) 70%);
                 }
             }
             &--appointment {
@@ -849,12 +838,12 @@
         align-items: center;
         width: auto;
         border-radius: 8px;
-        background: rgba(161, 191, 62, 0.24);
+        background: $main;
         display: flex;
         align-items: center;
         &:first-child
         {
-            background: #3C515C;
+            background: $dark;
         }
         &-icon {
             margin-right: 5px;

@@ -25,6 +25,11 @@
 		outline: none;
 		background-color: $secondary;
 		color: $white !important;
+
+		&::placeholder
+		{
+			color: white;
+		}
 	}
 	@media screen and (max-width: 575px) {
 		padding-left: 0;
