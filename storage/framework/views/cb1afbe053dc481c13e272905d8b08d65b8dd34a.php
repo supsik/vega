@@ -43,7 +43,7 @@
                             <?php echo $__env->make('user.partials.menu', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 
                             <section class="price-list">
-                                <div class="price-list__wrapper" itemscope itemtype="https://schema.org/MedicalClinic" >
+                                <div class="price-list__wrapper" >
                                     <?php $__empty_1 = true; $__currentLoopData = $analysis; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $analysisItem): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); $__empty_1 = false; ?>
                                         <div class="price-list__item">
                                             <span class="price-list__item-name" itemprop="makesOffer">

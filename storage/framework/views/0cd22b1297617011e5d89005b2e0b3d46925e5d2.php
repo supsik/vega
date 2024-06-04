@@ -8,16 +8,23 @@
                     <img class="d-block d-lg-none align-text-top img-fluid" src="<?php echo e(Vite::image('logo-white.png'), false); ?>"
                          alt="Логотип">
                 </a>
-
-                <a class="footer__ngc" href="<?php echo e($variables->ngc_link, false); ?>" target="_blank">
-                    VEGA <br>
-                    Клиника репродукции и генетики NGC
-                </a>
-
-                <a class="footer__logo footer__logo--ngc" href="<?php echo e($variables->ngc_link, false); ?>" target="_blank">
-                    <img class="d-none d-lg-block align-text-top img-fluid" src="<?php echo e(Vite::image('logo-ngc.png'), false); ?>"
-                         alt="Логотип ngc">
-                </a>
+                <ul class="footer__menu">
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="<?php echo e(route('doctors.index'), false); ?>">
+                                Первоклассные специалисты
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="<?php echo e(route('pages', 'advanced-equipment'), false); ?>">
+                                Передовое оборудование
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a class="footer__menu-link" href="<?php echo e(route('prices'), false); ?>">
+                                Стоимость услуг
+                            </a>
+                        </li>
+                    </ul>
             </div>
 
             <div class="footer__right">
@@ -105,26 +112,6 @@
 <?php endif; ?>
                         <?php endif; ?>
                     </div>
-
-                    <ul class="footer__menu">
-                        <li class="footer__menu-item">
-                            <a class="footer__menu-link" href="<?php echo e(route('doctors.index'), false); ?>">
-                                Первоклассные специалисты
-                            </a>
-                        </li>
-                        <li class="footer__menu-item">
-                            <a class="footer__menu-link" href="<?php echo e(route('pages', 'advanced-equipment'), false); ?>">
-                                Передовое оборудование
-                            </a>
-                        </li>
-                        <li class="footer__menu-item">
-                            <a class="footer__menu-link" href="<?php echo e(route('prices'), false); ?>">
-                                Стоимость услуг
-                            </a>
-                        </li>
-                    </ul>
-
-
                 </div>
 
                 <div class="footer__map map">
@@ -140,9 +127,6 @@
                     <?php endif; ?>
 
                     <div class="footer__copyright">
-                        <a class="footer__copyright-link" href="<?php echo e(route('pages', 'policy'), false); ?>">
-                            Политика конфиденциальности
-                        </a>
                         <span class="footer__copyright-text">
                             Copyright Клиника VEGA, <?php echo e(date('Y'), false); ?>
 

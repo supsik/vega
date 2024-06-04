@@ -1,4 +1,6 @@
-<?php $__env->startSection('title', $speciality->seo_title ??  $speciality->plural_name . ' - МегаДоктора - ' . config('app.name')); ?>
+
+
+<?php $__env->startSection('title', $speciality->seo_title ??  $speciality->plural_name . ' - VegaДоктора - ' . config('app.name')); ?>
 <?php $__env->startSection('description', $speciality->seo_description); ?>
 <?php $__env->startSection('keywords', $speciality->seo_keywords); ?>
 
@@ -24,7 +26,7 @@
 <?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag && $constructor = (new ReflectionClass(Illuminate\View\AnonymousComponent::class))->getConstructor()): ?>
 <?php $attributes = $attributes->except(collect($constructor->getParameters())->map->getName()->all()); ?>
 <?php endif; ?>
-<?php $component->withAttributes(['link' => ''.e(route('doctors.index'), false).'']); ?>МегаДоктора <?php echo $__env->renderComponent(); ?>
+<?php $component->withAttributes(['link' => ''.e(route('doctors.index'), false).'']); ?>VegaДоктора <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
 <?php if (isset($__componentOriginalc254754b9d5db91d5165876f9d051922ca0066f4)): ?>
 <?php $component = $__componentOriginalc254754b9d5db91d5165876f9d051922ca0066f4; ?>

@@ -1,4 +1,4 @@
-<?php $__env->startSection('title', 'МегаДоктора - ' . config('app.name')); ?>
+<?php $__env->startSection('title', 'VegaДоктора - ' . config('app.name')); ?>
 
 <div class="doctors-page">
     <div class="container-fluid">
@@ -21,7 +21,7 @@
 <?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag && $constructor = (new ReflectionClass(Illuminate\View\AnonymousComponent::class))->getConstructor()): ?>
 <?php $attributes = $attributes->except(collect($constructor->getParameters())->map->getName()->all()); ?>
 <?php endif; ?>
-<?php $component->withAttributes(['isActive' => true]); ?>МегаДоктора <?php echo $__env->renderComponent(); ?>
+<?php $component->withAttributes(['isActive' => true]); ?>VegaДоктора <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
 <?php if (isset($__componentOriginalc254754b9d5db91d5165876f9d051922ca0066f4)): ?>
 <?php $component = $__componentOriginalc254754b9d5db91d5165876f9d051922ca0066f4; ?>

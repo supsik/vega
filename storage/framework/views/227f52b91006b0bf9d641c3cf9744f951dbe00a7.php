@@ -26,7 +26,7 @@
                 <div class="header__top">
                     <div class="header__contact-list">
                         <div class="header-contact">
-                            РСО-Алания, г. Владикавказ
+                            Пункты рядом с вами:
                             <a href="https://mega-clinic.ru/" class="header-contact__address" itemprop="address" content="<?php echo e($variables->first_address, false); ?>">
                                 <?php echo e($variables->first_address, false); ?>
 

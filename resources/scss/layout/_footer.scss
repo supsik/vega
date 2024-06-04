@@ -3,18 +3,6 @@
     background: #0d548f;
     position: relative;
 
-    &__ngc {
-        display: none;
-        margin-top: 30px;
-        margin-bottom: 10px;
-        color: #BF1673;
-        @include base-transition(color);
-
-        &:hover {
-            color: $dark;
-        }
-    }
-
     &__inner {
         display: flex;
         justify-content: space-between;
@@ -56,11 +44,7 @@
 
     &__logo {
         max-width: 240px;
-    }
-
-    &__logo--ngc
-    {
-        display: none;
+        margin-bottom: 45px;
     }
 
     &__info {
@@ -132,19 +116,15 @@
             display: none;
         }
 
-        &__ngc {
-            display: none;
-        }
         &__logo {
             margin-right: 30px;
             max-width: 140px;
-
-            &--ngc {
-                display: none;
-            }
         }
         &__right {
             padding: 0;
+        }
+        &__left {
+            padding-top: 0px;
         }
         &__dev {
             &-logo {
@@ -170,6 +150,10 @@
             flex-direction: row;
             align-items: center;
             justify-content: space-between;
+            margin-bottom: 40px;
+            .footer__menu {
+                width: 280px;
+            }
         }
         &__dev {
             margin-top: 0;

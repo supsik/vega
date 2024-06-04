@@ -109,6 +109,9 @@
     &__menu-btn
     {
         margin-right: 10px;
+        background-color: transparent;
+        border-radius: 15px;
+        color: $dark;
     }
     &__mobile-menu {
         display: none;
@@ -151,25 +154,37 @@
     &__links {
         margin-left: auto;
         display: flex;
-        column-gap: 10px;
     }
 
     &__link-btn {
         padding: 8px 25px;
         font-size: 16px;
+        transition: .3s;
 
         &--lk {
             background-color: $dark;
             border-color: $dark;
 
             &:hover {
-                background-color: $main;
-                border-color: $main;
+                background-color: rgb(5, 6, 51);
             }
+        }
+
+        &--appointment:hover {
+            background-color: rgb(5, 6, 51);
         }
 
         &--mobile {
             display: none;
+        }
+
+        &:nth-child(1)
+        {
+            border-radius: 5px 0 0 5px;
+        }
+        &:nth-child(2)
+        {
+            border-radius: 0 5px 5px 0;
         }
     }
 
@@ -204,7 +219,7 @@
         align-self: end;
         .dropdown-menu {
         padding: 0;
-        border-radius: $main-border-radius;
+        border-radius: 15px;
         background-color: #83b2fc;
         max-height: 400px;
         overflow-y: auto;
@@ -230,10 +245,6 @@
                 &:hover {
                     background-color: darken($dark, 5);
                 }
-            }
-
-            li:not(:last-child) {
-                border-bottom: 1px solid #fff;
             }
         }
         .dropdown-item {
@@ -301,10 +312,6 @@
                     &:hover {
                         background-color: darken($dark, 5);
                     }
-                }
-
-                li:not(:last-child) {
-                    border-bottom: 1px solid #F6F8FA;
                 }
             }
 

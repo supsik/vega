@@ -37,7 +37,7 @@
 			<div class="appointment-page__list section-top-space">
 
 				<div class="appointment-page__select <?php echo e($this->mode != '' ? 'hide' : '', false); ?>">
-					<h2 class="appointment-page__list-title">Начните запись на прием с выбора МегаДоктора или услуги</h2>
+					<h2 class="appointment-page__list-title">Начните запись на прием с выбора VegaДоктора или услуги</h2>
 
 					<div class="appointment-page__select-action">
 						<button
@@ -45,7 +45,7 @@
 							data-action="doctors"
 							wire:click="setMode('doctors')"
 						>
-							Выбрать МегаДоктора
+							Выбрать VegaДоктора
 						</button>
 						<button
 							class="appointment-page__select-btn _service-select"
@@ -251,7 +251,7 @@
 
 								</div>
 								<div class="accordion-button__step">Шаг 2</div>
-								<span class="accordion-button__text"><?php echo e($selectedDoctor?->exists ? "МегаДоктор: $selectedDoctor->fullName" : 'Выбрать МегаДоктора', false); ?></span>
+								<span class="accordion-button__text"><?php echo e($selectedDoctor?->exists ? "VegaДоктор: $selectedDoctor->fullName" : 'Выбрать VegaДоктора', false); ?></span>
 
 								<div class="accordion-button__select btn" style="<?php echo e($selectedDoctor?->exists ? 'display:none;' : '', false); ?>">
 									<?php echo e($selectedDoctor?->exists ? '' : 'Выбрать', false); ?>
@@ -374,14 +374,14 @@
 								<?php if(count($schedule_first)): ?>
 									<?php
 if (! isset($_instance)) {
-    $html = \Livewire\Livewire::mount('schedule', ['title' => 'Запись в Клинику МЕГА на Доватора, 22','clinicId' => 1,'schedule' => $schedule_first,'doctor' => $selectedDoctor,'fromAppointment' => true])->html();
+    $html = \Livewire\Livewire::mount('schedule', ['title' => 'Запись в Клинику Vega на Доватора, 22','clinicId' => 1,'schedule' => $schedule_first,'doctor' => $selectedDoctor,'fromAppointment' => true])->html();
 } elseif ($_instance->childHasBeenRendered('l3454337948-0')) {
     $componentId = $_instance->getRenderedChildComponentId('l3454337948-0');
     $componentTag = $_instance->getRenderedChildComponentTagName('l3454337948-0');
     $html = \Livewire\Livewire::dummyMount($componentId, $componentTag);
     $_instance->preserveRenderedChild('l3454337948-0');
 } else {
-    $response = \Livewire\Livewire::mount('schedule', ['title' => 'Запись в Клинику МЕГА на Доватора, 22','clinicId' => 1,'schedule' => $schedule_first,'doctor' => $selectedDoctor,'fromAppointment' => true]);
+    $response = \Livewire\Livewire::mount('schedule', ['title' => 'Запись в Клинику Vega на Доватора, 22','clinicId' => 1,'schedule' => $schedule_first,'doctor' => $selectedDoctor,'fromAppointment' => true]);
     $html = $response->html();
     $_instance->logRenderedChild('l3454337948-0', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
 }
@@ -392,14 +392,14 @@ echo $html;
 								<?php if(count($schedule_second)): ?>
 									<?php
 if (! isset($_instance)) {
-    $html = \Livewire\Livewire::mount('schedule', ['title' => 'Запись в Клинику МЕГА на Весенней, 7А','clinicId' => 4,'schedule' => $schedule_second,'doctor' => $selectedDoctor,'fromAppointment' => true])->html();
+    $html = \Livewire\Livewire::mount('schedule', ['title' => 'Запись в Клинику Vega на Весенней, 7А','clinicId' => 4,'schedule' => $schedule_second,'doctor' => $selectedDoctor,'fromAppointment' => true])->html();
 } elseif ($_instance->childHasBeenRendered('l3454337948-1')) {
     $componentId = $_instance->getRenderedChildComponentId('l3454337948-1');
     $componentTag = $_instance->getRenderedChildComponentTagName('l3454337948-1');
     $html = \Livewire\Livewire::dummyMount($componentId, $componentTag);
     $_instance->preserveRenderedChild('l3454337948-1');
 } else {
-    $response = \Livewire\Livewire::mount('schedule', ['title' => 'Запись в Клинику МЕГА на Весенней, 7А','clinicId' => 4,'schedule' => $schedule_second,'doctor' => $selectedDoctor,'fromAppointment' => true]);
+    $response = \Livewire\Livewire::mount('schedule', ['title' => 'Запись в Клинику Vega на Весенней, 7А','clinicId' => 4,'schedule' => $schedule_second,'doctor' => $selectedDoctor,'fromAppointment' => true]);
     $html = $response->html();
     $_instance->logRenderedChild('l3454337948-1', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
 }
@@ -525,7 +525,7 @@ echo $html;
 
 								</div>
 								<div class="accordion-button__step">Шаг 1</div>
-								<span class="accordion-button__text"><?php echo e($selectedDoctor?->exists ? "МегаДоктор: $selectedDoctor->fullName" : 'Выбрать МегаДоктора', false); ?></span>
+								<span class="accordion-button__text"><?php echo e($selectedDoctor?->exists ? "VegaДоктор: $selectedDoctor->fullName" : 'Выбрать VegaДоктора', false); ?></span>
 								<div class="accordion-button__select btn" style="<?php echo e($selectedDoctor?->exists ? 'display:none;' : '', false); ?>">
 									<?php echo e($selectedDoctor?->exists ? '' : 'Выбрать', false); ?>
 
@@ -769,14 +769,14 @@ echo $html;
 								<?php if(count($schedule_first)): ?>
 									<?php
 if (! isset($_instance)) {
-    $html = \Livewire\Livewire::mount('schedule', ['title' => 'Запись в Клинику МЕГА на Доватора, 22','clinicId' => 1,'schedule' => $schedule_first,'doctor' => $selectedDoctor,'fromAppointment' => true])->html();
+    $html = \Livewire\Livewire::mount('schedule', ['title' => 'Запись в Клинику Vega на Доватора, 22','clinicId' => 1,'schedule' => $schedule_first,'doctor' => $selectedDoctor,'fromAppointment' => true])->html();
 } elseif ($_instance->childHasBeenRendered('l3454337948-3')) {
     $componentId = $_instance->getRenderedChildComponentId('l3454337948-3');
     $componentTag = $_instance->getRenderedChildComponentTagName('l3454337948-3');
     $html = \Livewire\Livewire::dummyMount($componentId, $componentTag);
     $_instance->preserveRenderedChild('l3454337948-3');
 } else {
-    $response = \Livewire\Livewire::mount('schedule', ['title' => 'Запись в Клинику МЕГА на Доватора, 22','clinicId' => 1,'schedule' => $schedule_first,'doctor' => $selectedDoctor,'fromAppointment' => true]);
+    $response = \Livewire\Livewire::mount('schedule', ['title' => 'Запись в Клинику Vega на Доватора, 22','clinicId' => 1,'schedule' => $schedule_first,'doctor' => $selectedDoctor,'fromAppointment' => true]);
     $html = $response->html();
     $_instance->logRenderedChild('l3454337948-3', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
 }
@@ -787,14 +787,14 @@ echo $html;
 								<?php if(count($schedule_second)): ?>
 									<?php
 if (! isset($_instance)) {
-    $html = \Livewire\Livewire::mount('schedule', ['title' => 'Запись в Клинику МЕГА на Весенней, 7А','clinicId' => 4,'schedule' => $schedule_second,'doctor' => $selectedDoctor,'fromAppointment' => true])->html();
+    $html = \Livewire\Livewire::mount('schedule', ['title' => 'Запись в Клинику Vega на Весенней, 7А','clinicId' => 4,'schedule' => $schedule_second,'doctor' => $selectedDoctor,'fromAppointment' => true])->html();
 } elseif ($_instance->childHasBeenRendered('l3454337948-4')) {
     $componentId = $_instance->getRenderedChildComponentId('l3454337948-4');
     $componentTag = $_instance->getRenderedChildComponentTagName('l3454337948-4');
     $html = \Livewire\Livewire::dummyMount($componentId, $componentTag);
     $_instance->preserveRenderedChild('l3454337948-4');
 } else {
-    $response = \Livewire\Livewire::mount('schedule', ['title' => 'Запись в Клинику МЕГА на Весенней, 7А','clinicId' => 4,'schedule' => $schedule_second,'doctor' => $selectedDoctor,'fromAppointment' => true]);
+    $response = \Livewire\Livewire::mount('schedule', ['title' => 'Запись в Клинику Vega на Весенней, 7А','clinicId' => 4,'schedule' => $schedule_second,'doctor' => $selectedDoctor,'fromAppointment' => true]);
     $html = $response->html();
     $_instance->logRenderedChild('l3454337948-4', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
 }

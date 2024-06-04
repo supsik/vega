@@ -5,8 +5,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50%;
-    border: 2px solid $dark;
     fill: $dark;
     @include base-transition(border);
 

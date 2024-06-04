@@ -1,3 +1,5 @@
+
+
 <?php $__env->startSection('title', $page->seo_title ?? 'О нас - ' . config('app.name')); ?>
 <?php $__env->startSection('description', $page->seo_description); ?>
 <?php $__env->startSection('keywords', $page->seo_keywords); ?>
@@ -16,7 +18,7 @@
 <?php $attributes = $attributes->except(collect($constructor->getParameters())->map->getName()->all()); ?>
 <?php endif; ?>
 <?php $component->withAttributes([]); ?>
-                    <h1 class="breadcrumb__heading">Клиника МЕГА</h1>
+                    <h1 class="breadcrumb__heading">Клиника Vega</h1>
                  <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
 <?php if (isset($__componentOriginalc254754b9d5db91d5165876f9d051922ca0066f4)): ?>
@@ -98,7 +100,7 @@
                             <?php if($page->first_block_text): ?>
                                 <div class="about-section__text pt-0">
                                     <div class="about-section__text-column">
-                                        <h2 class="section-title about-section__title">Клиника МЕГА</h2>
+                                        <h2 class="section-title about-section__title">Клиника Vega</h2>
                                         <?php echo $page->first_block_text; ?>
 
                                     </div>

@@ -4,12 +4,18 @@
     }
 }
 
+.tab-content{
+    overflow: hidden;
+    border-radius: 0 15px 15px 15px;
+    color: white !important;
+}
+
 .login-links {
     display: flex;
     column-gap: 10px;
 
     a {
-        color: #000;
+        color: #fff;
         text-decoration: none;
         @include base-transition(color);
 
