@@ -56,18 +56,17 @@
     }
 
     &__controls {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
         position: absolute;
-        bottom: 0;
+        bottom: 40%;
         left: 0;
         display: flex;
     }
 
-    &__prev-btn {
-        border-top-right-radius: 20px;
-    }
-
-    &__next-btn {
-        border-top-right-radius: 20px;
+    &__prev-btn, &__next-btn {
+        border-radius: 10px 0 0 10px;
     }
 
     @media screen and (max-width: 1399px) {
