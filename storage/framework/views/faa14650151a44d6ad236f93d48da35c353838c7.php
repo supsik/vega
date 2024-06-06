@@ -42,6 +42,7 @@
                     <div class="row">
                         <div class="col-12 col-md-5">
                             <img class="news-show-page__image img-fluid" itemprop="url image" content="<?php echo e($news->getFirstMediaUrl('cover'), false); ?>" src="<?php echo e($news->getFirstMediaUrl('cover'), false); ?>">
+
                         </div>
 
                         <div class="col-12 col-md-7">

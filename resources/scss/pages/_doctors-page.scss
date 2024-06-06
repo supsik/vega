@@ -5,9 +5,15 @@
 		row-gap: 70px;
 	}
 	&__filter {
-		.filter__wrapper::before {
-			border-bottom-width: 156px;
+		.filter__wrapper {
+			border-radius: 10px;
 		}
+	}
+	&__inner
+	{
+		display: flex;
+		flex-direction: column;
+		align-content: center;
 	}
 	@media screen and (max-width: 991px) {
 		&__list {

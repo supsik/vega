@@ -32,10 +32,12 @@
 
     &__slash {
         padding: 0 5px;
+        color: $dark;
     }
 
     &__link {
         color: $dark;
+        text-decoration: none;
         @include base-transition(color);
 
         &:hover {

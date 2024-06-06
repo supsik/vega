@@ -16,7 +16,7 @@
 <?php $attributes = $attributes->except(collect($constructor->getParameters())->map->getName()->all()); ?>
 <?php endif; ?>
 <?php $component->withAttributes([]); ?>
-        Вы всегда можете оставить пожелание, задать вопрос или написать отзыв о работе любого сотрудника нашей МегаКоманды
+        Вы всегда можете оставить пожелание, задать вопрос или написать отзыв о работе любого сотрудника нашей VegaКоманды
      <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
 <?php if (isset($__componentOriginalc254754b9d5db91d5165876f9d051922ca0066f4)): ?>

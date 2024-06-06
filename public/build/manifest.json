@@ -29,11 +29,11 @@
   },
   "resources/images/logo.png": {
     "file": "assets/logo-9be3bd81.png",
-    "src": "resources/images/logo.png"
+    "src": "resources/images/mobile-logo.png"
   },
   "resources/images/mobile-logo.png": {
     "file": "assets/logo-9be3bd81.png",
-    "src": "resources/images/logo.png"
+    "src": "resources/images/mobile-logo.png"
   },
   "resources/images/persone.png": {
     "file": "assets/persone-e2e3166b.png",
@@ -96,7 +96,7 @@
     "src": "resources/js/app.js"
   },
   "resources/scss/app.scss": {
-    "file": "assets/app-dd89933b.css",
+    "file": "assets/app-57ac139a.css",
     "isEntry": true,
     "src": "resources/scss/app.scss"
   }

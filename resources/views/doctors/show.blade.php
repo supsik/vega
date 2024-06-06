@@ -49,7 +49,7 @@
 
                         @if(count($firstSchedule))
                             <livewire:schedule
-                                title="Запись в Клинику VEGA на Доватора 22"
+                                title="Запись в Клинику VEGA на Бутырина 37"
                                 :clinicId="1"
                                 :schedule="$firstSchedule"
                                 :doctor="$doctor"></livewire:schedule>
@@ -57,7 +57,7 @@
 
                         @if(count($secondSchedule))
                             <livewire:schedule
-                                title="Запись в Клинику VEGA на Весенней 7А"
+                                title="Запись в Клинику VEGA на Шмулевича 41"
                                 :clinicId="4"
                                 :schedule="$secondSchedule"
                                 :doctor="$doctor"></livewire:schedule>
@@ -66,8 +66,8 @@
                         @if(!count($firstSchedule) && !count($secondSchedule))
                         <span class="accordion-button__schedule-full">
                         К сожалению, на ближайшую неделю запись к доктору полная.
-										Пожалуйста, позвоните в колл-центр 8(8672)40-41-30,
-										наши операторы подберут для Вас другое удобное время или включат в лист ожидания.
+                                        Пожалуйста, позвоните в колл-центр 8(8672)40-41-30,
+                                        наши операторы подберут для Вас другое удобное время или включат в лист ожидания.
                         </span>
                         @endif
 

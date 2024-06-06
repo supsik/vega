@@ -29,8 +29,8 @@
 
 <?php if(!$isActive): ?>
     <li class="breadcrumb__item">
-        <a class="breadcrumb__link" href="<?php echo e($link, false); ?>"><?php echo e($slot, false); ?></a>
-        <span class="breadcrumb__slash">/</span>
+        <a class="breadcrumb__link" href="<?php echo e($link, false); ?>">⤺&nbsp;&nbsp;<?php echo e($slot, false); ?></a>
+        <span class="breadcrumb__slash">|</span>
     </li>
 <?php else: ?>
     <li class="<?php echo \Illuminate\Support\Arr::toCssClasses([

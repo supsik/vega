@@ -15,7 +15,7 @@
                 </x-breadcrumbs>
 
                 <div class="row section-top-space">
-                    <div class="col-12 col-md-7">
+                    <div class="col-12 col-md-7" style="display: none;">
                         @if($speciality->description)
                             <div class="diagnostics-page__text">
                                 {!! $speciality->description !!}
