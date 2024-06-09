@@ -42,7 +42,7 @@ return [
     'tinymce' => [
         'file_manager' => 'laravel-filemanager',
         'token' => env('MOONSHINE_TINYMCE_TOKEN', ''),
-        'version' => env('MOONSHINE_TINYMCE_VERSION', '6'),
+        'version' => env('MOONSHINE_TINYMCE_VERSION', '7'),
         'toolbar' => 'fullscreen undo redo | blocks | bold italic underline strikethrough | link image media table tabledelete hr  | align | numlist bullist indent outdent | emoticons charmap | removeformat | codesample | ltr rtl | tableprops tablerowprops tablecellprops | tableinsertrowbefore tableinsertrowafter tabledeleterow | tableinsertcolbefore tableinsertcolafter tabledeletecol | preview print visualblocks visualchars',
         'simple_toolbar' => 'fullscreen undo redo | blocks | bold italic underline strikethrough | link',
     ],

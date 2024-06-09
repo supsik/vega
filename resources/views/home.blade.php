@@ -55,25 +55,6 @@
     <section class="about-section section-top-space">
         <div class="container-fluid">
             <div class="row">
-
-                <div class="col-12 col-sm-4 col-md-3">
-                    @if($page->employee)
-                        <x-person class="about-section__person person--link"
-                                  :link="route('team.show', $page->employee)">
-                            <x-slot:photo>
-                                <x-person.photo :url="$page->employee->getFirstMediaUrl('photo')"
-                                                :name="$page->employee->name"></x-person.photo>
-                            </x-slot:photo>
-
-                            <x-slot:info>
-                                <x-person.name :value="$page->employee->name"></x-person.name>
-                                <x-person.position :value="$page->employee->position->name"></x-person.position>
-                            </x-slot:info>
-                        </x-person>
-                    @endif
-                </div>
-
-
                 <div class="col-12 col-sm-8 col-md-9">
                     @if($page->first_block_text || $page->second_block_text)
                         <div class="about-section__text about-section__text--dots">
@@ -86,7 +67,6 @@
                         </div>
                     @endif
                 </div>
-
             </div>
         </div>
     </section>
@@ -101,9 +81,6 @@
                             href="{{ route('diagnostics.show', $diagnostic) }}"
                             data-animation ="{{ $diagnostic->getFirstMediaUrl('animation') }}"
                             >
-                            @if($diagnostic->getFirstMediaUrl('animation'))
-                                <canvas class="services-canvas" width="50" height="50"></canvas>
-                            @endif
                             <div>
                                 <p class = "services-card__name">{{ $diagnostic->name }}</p>
                                 <p class = "services-card__description">{{ mb_strimwidth(
@@ -167,7 +144,7 @@
                                             <h4 class="text-carousel__author">
                                                 {{ $review->author }}
                                             </h4>
-                                            <p class="text-carouser__text">
+                                            <p class="text-carousel__text">
                                                 {{ $review->text }}
                                             </p>
                                         </div>

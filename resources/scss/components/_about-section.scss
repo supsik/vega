@@ -6,12 +6,17 @@
 
     &__text {
         position: relative;
-        padding-top: 80px;
+        padding-top: 30px;
         display: flex;
         justify-content: space-between;
         column-gap: 50px;
         font-size: 16px;
         color: $dark;
+    }
+
+    .row
+    {
+        justify-content: center;
     }
 
     &__text-column {
