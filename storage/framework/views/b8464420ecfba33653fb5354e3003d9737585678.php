@@ -1,3 +1,5 @@
+
+
 <?php $__env->startSection('title', 'Вход в личный кабинет - ' . config('app.name')); ?>
 
 <?php $__env->startSection('content'); ?>
@@ -68,15 +70,15 @@
                                     <?php
 if (! isset($_instance)) {
     $html = \Livewire\Livewire::mount('auth.register', ['showAuthForm' => '1','redirect' => '1'])->html();
-} elseif ($_instance->childHasBeenRendered('ac7ffW5')) {
-    $componentId = $_instance->getRenderedChildComponentId('ac7ffW5');
-    $componentTag = $_instance->getRenderedChildComponentTagName('ac7ffW5');
+} elseif ($_instance->childHasBeenRendered('8l3kXVK')) {
+    $componentId = $_instance->getRenderedChildComponentId('8l3kXVK');
+    $componentTag = $_instance->getRenderedChildComponentTagName('8l3kXVK');
     $html = \Livewire\Livewire::dummyMount($componentId, $componentTag);
-    $_instance->preserveRenderedChild('ac7ffW5');
+    $_instance->preserveRenderedChild('8l3kXVK');
 } else {
     $response = \Livewire\Livewire::mount('auth.register', ['showAuthForm' => '1','redirect' => '1']);
     $html = $response->html();
-    $_instance->logRenderedChild('ac7ffW5', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
+    $_instance->logRenderedChild('8l3kXVK', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
 }
 echo $html;
 ?>
@@ -88,30 +90,30 @@ echo $html;
                                     <?php
 if (! isset($_instance)) {
     $html = \Livewire\Livewire::mount('auth.register', ['showRegistrationForm' => '0'])->html();
-} elseif ($_instance->childHasBeenRendered('PdjSS2o')) {
-    $componentId = $_instance->getRenderedChildComponentId('PdjSS2o');
-    $componentTag = $_instance->getRenderedChildComponentTagName('PdjSS2o');
+} elseif ($_instance->childHasBeenRendered('kPxzh5u')) {
+    $componentId = $_instance->getRenderedChildComponentId('kPxzh5u');
+    $componentTag = $_instance->getRenderedChildComponentTagName('kPxzh5u');
     $html = \Livewire\Livewire::dummyMount($componentId, $componentTag);
-    $_instance->preserveRenderedChild('PdjSS2o');
+    $_instance->preserveRenderedChild('kPxzh5u');
 } else {
     $response = \Livewire\Livewire::mount('auth.register', ['showRegistrationForm' => '0']);
     $html = $response->html();
-    $_instance->logRenderedChild('PdjSS2o', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
+    $_instance->logRenderedChild('kPxzh5u', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
 }
 echo $html;
 ?>
                                     <?php
 if (! isset($_instance)) {
     $html = \Livewire\Livewire::mount('auth.register', ['showRegistrationForm' => '1'])->html();
-} elseif ($_instance->childHasBeenRendered('5ekq2Tc')) {
-    $componentId = $_instance->getRenderedChildComponentId('5ekq2Tc');
-    $componentTag = $_instance->getRenderedChildComponentTagName('5ekq2Tc');
+} elseif ($_instance->childHasBeenRendered('Oc6Nt9g')) {
+    $componentId = $_instance->getRenderedChildComponentId('Oc6Nt9g');
+    $componentTag = $_instance->getRenderedChildComponentTagName('Oc6Nt9g');
     $html = \Livewire\Livewire::dummyMount($componentId, $componentTag);
-    $_instance->preserveRenderedChild('5ekq2Tc');
+    $_instance->preserveRenderedChild('Oc6Nt9g');
 } else {
     $response = \Livewire\Livewire::mount('auth.register', ['showRegistrationForm' => '1']);
     $html = $response->html();
-    $_instance->logRenderedChild('5ekq2Tc', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
+    $_instance->logRenderedChild('Oc6Nt9g', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
 }
 echo $html;
 ?>
@@ -122,15 +124,15 @@ echo $html;
                                     <?php
 if (! isset($_instance)) {
     $html = \Livewire\Livewire::mount('auth.forgot-password', [])->html();
-} elseif ($_instance->childHasBeenRendered('mjT5Vlz')) {
-    $componentId = $_instance->getRenderedChildComponentId('mjT5Vlz');
-    $componentTag = $_instance->getRenderedChildComponentTagName('mjT5Vlz');
+} elseif ($_instance->childHasBeenRendered('bb5pVI4')) {
+    $componentId = $_instance->getRenderedChildComponentId('bb5pVI4');
+    $componentTag = $_instance->getRenderedChildComponentTagName('bb5pVI4');
     $html = \Livewire\Livewire::dummyMount($componentId, $componentTag);
-    $_instance->preserveRenderedChild('mjT5Vlz');
+    $_instance->preserveRenderedChild('bb5pVI4');
 } else {
     $response = \Livewire\Livewire::mount('auth.forgot-password', []);
     $html = $response->html();
-    $_instance->logRenderedChild('mjT5Vlz', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
+    $_instance->logRenderedChild('bb5pVI4', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
 }
 echo $html;
 ?>
@@ -191,7 +193,7 @@ echo $html;
 <?php $component = $__componentOriginalc254754b9d5db91d5165876f9d051922ca0066f4; ?>
 <?php unset($__componentOriginalc254754b9d5db91d5165876f9d051922ca0066f4); ?>
 <?php endif; ?>
-                                        <div class="account-page__form-error d-none">Что то пощло не так</div>
+                                        <div class="account-page__form-error d-none">Что то пошло не так</div>
                                      <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
 <?php if (isset($__componentOriginalc254754b9d5db91d5165876f9d051922ca0066f4)): ?>

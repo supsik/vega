@@ -16,7 +16,6 @@
     <?php if($_SERVER['REQUEST_URI'] === '/news'): ?>
     <link rel="canonical" href="<?php echo e(url()->current(), false); ?>" /> 
     <?php endif; ?>
-    <script src="//code.jivo.ru/widget/AejXOG8qfy" async></script>
     <?php echo \Livewire\Livewire::styles(); ?>
 
     <?php echo app('Illuminate\Foundation\Vite')(['resources/scss/app.scss', 'resources/js/app.js']); ?>
@@ -27,15 +26,15 @@
 <?php
 if (! isset($_instance)) {
     $html = \Livewire\Livewire::mount('flash', [])->html();
-} elseif ($_instance->childHasBeenRendered('Ix3y1ws')) {
-    $componentId = $_instance->getRenderedChildComponentId('Ix3y1ws');
-    $componentTag = $_instance->getRenderedChildComponentTagName('Ix3y1ws');
+} elseif ($_instance->childHasBeenRendered('WCYa3aP')) {
+    $componentId = $_instance->getRenderedChildComponentId('WCYa3aP');
+    $componentTag = $_instance->getRenderedChildComponentTagName('WCYa3aP');
     $html = \Livewire\Livewire::dummyMount($componentId, $componentTag);
-    $_instance->preserveRenderedChild('Ix3y1ws');
+    $_instance->preserveRenderedChild('WCYa3aP');
 } else {
     $response = \Livewire\Livewire::mount('flash', []);
     $html = $response->html();
-    $_instance->logRenderedChild('Ix3y1ws', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
+    $_instance->logRenderedChild('WCYa3aP', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
 }
 echo $html;
 ?>

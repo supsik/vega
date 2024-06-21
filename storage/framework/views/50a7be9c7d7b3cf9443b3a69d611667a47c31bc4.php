@@ -1,3 +1,5 @@
+
+
 <?php $__env->startSection('title', $page->seo_title ?? config('app.name')); ?>
 <?php $__env->startSection('description', $page->seo_description); ?>
 <?php $__env->startSection('keywords', $page->seo_keywords); ?>

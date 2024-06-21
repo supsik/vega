@@ -81,7 +81,7 @@
                                         <x-form.button type="button" onclick="megaAuth.reset(event)">
                                             Создать
                                         </x-form.button>
-                                        <div class="account-page__form-error d-none">Что то пощло не так</div>
+                                        <div class="account-page__form-error d-none">Что то пошло не так</div>
                                     </x-form>
                                 </div>
 

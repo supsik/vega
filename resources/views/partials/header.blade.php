@@ -25,7 +25,6 @@
                             <a href="https://yandex.ru/maps/33/vladikavkaz/house/ulitsa_shmulevicha_41/YE0YcQdkTE0PQFppfXxzdHRhZw==/?ll=44.704588%2C43.025823&source=constructorLink&um=constructor%3Ad30db39fd69d174281f4342af6159fc6aeaae0dc4ebbca325f70f9859abeb0cd&z=16" class="header-contact__address" itemprop="address" content="{{ $variables->second_address }}">
                                 {{ $variables->second_address }}
                             </a>
-                            <span class="header-contact__info" itemprop="openingHours" datetime="Mo-Su 08:00−23:00">{{ $variables->second_mode }}</span>
                         </div>
                         <div class="header-contact">
                             <div class="social-list header__feedback-social">

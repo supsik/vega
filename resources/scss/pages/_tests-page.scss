@@ -1,5 +1,6 @@
 .tests-page {
 	&__filter {
+		border-radius: 15px;
 		.filter__wrapper::before {
 			border-bottom-width: 101px;
 		}

@@ -1,3 +1,5 @@
+
+
 <?php $__env->startSection('title', 'Заключения - ' . config('app.name')); ?>
 
 <?php $__env->startSection('content'); ?>
@@ -69,7 +71,7 @@
 <?php $attributes = $attributes->except(collect($constructor->getParameters())->map->getName()->all()); ?>
 <?php endif; ?>
 <?php $component->withAttributes([]); ?>
-                                            К сожалению, на данный момент у вас отсутствуют результаты заключения
+                                            На данный момент у вас отсутствуют результаты заключения
                                          <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
 <?php if (isset($__componentOriginalc254754b9d5db91d5165876f9d051922ca0066f4)): ?>

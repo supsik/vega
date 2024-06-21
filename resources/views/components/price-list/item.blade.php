@@ -29,7 +29,7 @@
     @elseif($link!= '#')
         <a class="price-list__item-btn btn btn-main" href="{{ $link }}">Записаться</a>
     @else
-        <span class="price-list__item-disable" itemprop="telephone" content ="8 (8672) 40-41-30">Запись по телефону 8 (8672) 40-41-30</span>
+        <span class="price-list__item-disable" itemprop="telephone" content ="8 (9094) 76-50-69">Запись по телефону 8 (9094) 76-50-69</span>
     @endif
 </div>
 

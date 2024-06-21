@@ -1,3 +1,5 @@
+
+
 <?php $__env->startSection('title', 'Поиск - ' . config('app.name')); ?>
 
 <?php $__env->startSection('content'); ?>
@@ -55,21 +57,19 @@
                         <h3 class="section-title">
                             Услуги
                         </h3>
-
                         <div class="price-list__wrapper">
-
                             <?php $__currentLoopData = $services; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $service): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                                <div class="price-list__item">
-                                    <span class="price-list__item-name">
+                                <div class="price-list__item" >
+                                    <span class="price-list__item-name" itemprop="makesOffer">
                                         <?php echo e($service->title, false); ?>
 
                                     </span>
-                                        <span class="price-list__item-cost">
+                                        <span class="price-list__item-cost" itemprop="priceRange">
                                         <?php echo e(price($service->price), false); ?>
 
                                     </span>
                                     <?php if($service->is_disabled): ?>
-                                        <span class="price-list__item-disable"><?php echo e($variables->service_disable_text, false); ?></span>
+                                        <span class="price-list__item-disable" itemprop="telephone" content ="8 (9094) 76-50-69"><?php echo e($variables->service_disable_text, false); ?></span>
                                     <?php else: ?>
                                         <a class="price-list__item-btn btn btn-main"
                                            href="<?php echo e(route('appointment.index', ['serviceId' => $service->id]), false); ?>">Записаться</a>
@@ -159,7 +159,7 @@
                 <?php endif; ?>
 
                 <?php if($news->count()): ?>
-                    <section class="news section-top-space">
+                    <section class="news section-top-space" itemscope itemtype="https://schema.org/NewsArticle">
 
                         <h3 class="section-title">
                             Новости
@@ -256,7 +256,7 @@
                     <section class="news section-top-space">
 
                         <h3 class="section-title">
-                            Диагностики
+                            Диагностика
                         </h3>
 
                         <div class="row gy-4">

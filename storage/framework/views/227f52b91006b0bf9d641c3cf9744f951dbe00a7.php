@@ -27,7 +27,6 @@
                                 <?php echo e($variables->second_address, false); ?>
 
                             </a>
-                            <span class="header-contact__info" itemprop="openingHours" datetime="Mo-Su 08:00−23:00"><?php echo e($variables->second_mode, false); ?></span>
                         </div>
                         <div class="header-contact">
                             <div class="social-list header__feedback-social">

@@ -16,7 +16,6 @@
     @if ($_SERVER['REQUEST_URI'] === '/news')
     <link rel="canonical" href="{{ url()->current() }}" /> 
     @endif
-    <script src="//code.jivo.ru/widget/AejXOG8qfy" async></script>
     @livewireStyles
     @vite(['resources/scss/app.scss', 'resources/js/app.js'])
 </head>

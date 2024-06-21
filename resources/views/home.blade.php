@@ -1,4 +1,3 @@
-
 @extends('layouts.main')
 
 @section('title', $page->seo_title ?? config('app.name'))

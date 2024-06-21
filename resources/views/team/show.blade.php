@@ -28,7 +28,7 @@
 
                     <div class="col-12 col-md-5">
                         <div class="employee-page__photo">
-                            <img src="{{ $employee->getFirstMediaUrl('photo') }}" alt ="{{ $doctor->full_name }} {{ $doctor->specialitiesList }}">>
+                            <img src="{{ $employee->getFirstMediaUrl('photo') }}" alt ="{{ $employee->full_name }} {{ $employee->specialitiesList }}">
                         </div>
                     </div>
                 </div>

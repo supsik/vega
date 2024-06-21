@@ -28,7 +28,7 @@
                                         {{ price($service->price) }}
                                     </span>
                                     @if($service->is_disabled)
-                                        <span class="price-list__item-disable" itemprop="telephone" content ="8 (8672) 40-41-30">{{ $variables->service_disable_text }}</span>
+                                        <span class="price-list__item-disable" itemprop="telephone" content ="8 (9094) 76-50-69">{{ $variables->service_disable_text }}</span>
                                     @else
                                         <a class="price-list__item-btn btn btn-main"
                                            href="{{ route('appointment.index', ['serviceId' => $service->id]) }}">Записаться</a>

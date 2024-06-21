@@ -1,3 +1,5 @@
+
+
 <?php $__env->startSection('title', $employee->seo_title ?? $employee->name . '- Управление клиникой - ' . config('app.name')); ?>
 <?php $__env->startSection('description', $employee->seo_description); ?>
 <?php $__env->startSection('keywords', $employee->seo_keywords); ?>
@@ -66,7 +68,7 @@
 
                     <div class="col-12 col-md-5">
                         <div class="employee-page__photo">
-                            <img src="<?php echo e($employee->getFirstMediaUrl('photo'), false); ?>" alt ="<?php echo e($doctor->full_name, false); ?> <?php echo e($doctor->specialitiesList, false); ?>">>
+                            <img src="<?php echo e($employee->getFirstMediaUrl('photo'), false); ?>" alt ="<?php echo e($employee->full_name, false); ?> <?php echo e($employee->specialitiesList, false); ?>">
                         </div>
                     </div>
                 </div>
@@ -84,15 +86,15 @@
                         <?php
 if (! isset($_instance)) {
     $html = \Livewire\Livewire::mount('form.review', ['name' => $employee->name])->html();
-} elseif ($_instance->childHasBeenRendered('cQ94flL')) {
-    $componentId = $_instance->getRenderedChildComponentId('cQ94flL');
-    $componentTag = $_instance->getRenderedChildComponentTagName('cQ94flL');
+} elseif ($_instance->childHasBeenRendered('bMpx15f')) {
+    $componentId = $_instance->getRenderedChildComponentId('bMpx15f');
+    $componentTag = $_instance->getRenderedChildComponentTagName('bMpx15f');
     $html = \Livewire\Livewire::dummyMount($componentId, $componentTag);
-    $_instance->preserveRenderedChild('cQ94flL');
+    $_instance->preserveRenderedChild('bMpx15f');
 } else {
     $response = \Livewire\Livewire::mount('form.review', ['name' => $employee->name]);
     $html = $response->html();
-    $_instance->logRenderedChild('cQ94flL', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
+    $_instance->logRenderedChild('bMpx15f', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
 }
 echo $html;
 ?>
